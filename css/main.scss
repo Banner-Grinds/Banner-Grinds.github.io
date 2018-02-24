@@ -1226,12 +1226,6 @@ $baseurl: '{{ site.baseurl }}/images';
 			width: 60em;
 			margin: 0 auto;
 
-			.headerSEO {
-				max-width: 60%;
-				margin: 0 auto;
-				line-height: 30px;
-			}
-
 			@include breakpoint(large) {
 				width: 90%;
 			}
@@ -1239,6 +1233,12 @@ $baseurl: '{{ site.baseurl }}/images';
 			@include breakpoint(medium) {
 				width: 100%;
 			}
+		}
+
+		.headerSEO {
+			max-width: 60%;
+			margin: 0 auto;
+			line-height: 30px;
 		}
 
 		&.alt {
