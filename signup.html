@@ -9,14 +9,16 @@ title: Sign Up
 	<form action="https://formspree.io/bannergrinds@gmail.com" method="POST">
     	<input type="text" name="name" placeholder="Your name" style="margin-bottom: 20px">
     	<input type="email" name="_replyto" placeholder="Your email address" style="margin-bottom: 20px">
-    	<select name="class" style="margin-bottom: 20px">
-    		<option disabled selected>Select course from dropdown</option>
-    		<option>Leaving Cert Ordinary Level</option>
-    		<option>Leaving Cert Higher Level</option>
-    		<option>Junior Cert Higher Level</option>
-    		<option>Junior Cert Ordinary Level</option>
-    	</select>
-    	<textarea name="content" placeholder="Your enquiry here" style="margin-bottom: 20px">
+    	<div class="select-wrapper">
+    		<select name="demo-category" id="demo-category" style="margin-bottom: 20px">
+	    		<option disabled selected>- Select course from dropdown -</option>
+	    		<option>Leaving Cert Ordinary Level</option>
+	    		<option>Leaving Cert Higher Level</option>
+	    		<option>Junior Cert Higher Level</option>
+	    		<option>Junior Cert Ordinary Level</option>
+    		</select>
+    	</div>
+    	<textarea name="content" placeholder="Your enquiry here" style="margin-bottom: 20px" rows="6">
     	</textarea>
     	<input type="submit" value="Send">
 	</form>
