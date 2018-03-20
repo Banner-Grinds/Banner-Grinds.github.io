@@ -19,9 +19,19 @@ subheading: Enter your details below
 	    		<option>Junior Cert Ordinary Level</option>
     		</select>
     	</div>
-    	<input type="text" name="referral_email" placeholder="Enter the email from a student in this class who referred you and you'll both receive a 10% discount" style="margin-bottom: 20px">
+    	<input type="text" name="referral_email" class="referral" placeholder="Enter the email from a student in this class who referred you and you'll both receive a 10% discount" style="margin-bottom: 20px">
     	<textarea name="content" placeholder="Your enquiry here" style="margin-bottom: 20px" rows="6"></textarea>
     	<input type="submit" value="Send">
     	<input type="hidden" name="_next" value="//www.bannergrinds.com/thanks.html" />
     	<input type="text" name="_gotcha" style="display:none" />
 	</form>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	<script>
+
+		if ($(window).width() < 960) {
+		   $('.referral').attr('placeholder','Referral email');
+		}
+
+	</script>
