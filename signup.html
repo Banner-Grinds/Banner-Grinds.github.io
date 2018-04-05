@@ -20,7 +20,7 @@ subheading: Enter your details below
 	    		<option>Leaving Cert Ordinary Level Weekly</option>
     		</select>
     	</div>
-    	<input type="text" name="date" id="datepicker" placeholder="Enter the email from a student in this class who referred you and you'll both receive a 10% discount" style="margin-bottom: 20px">
+    	<input type="text" name="date" id="datepicker" style="margin-bottom: 20px">
     	<input type="text" name="referral_email" class="referral" placeholder="Enter the email from a student in this class who referred you and you'll both receive a 10% discount" style="margin-bottom: 20px">
     	<textarea name="content" placeholder="Your enquiry here" style="margin-bottom: 20px" rows="6"></textarea>
     	<input type="submit" value="Send">
@@ -36,12 +36,8 @@ subheading: Enter your details below
 		   $('.referral').attr('placeholder','Referral email - 10% discount');
 		}
 
-	  	$( function() {
+	  	$(function() {
 		  	$( "#datepicker" ).datepicker();
-		    beforeShowDay: function(date) {
-		        var day = date.getDay();
-		        return [(day != 1 && day != 2 && day != 3 && day != 5 && day != 6 && day != 7)];
-	    	}
 	  	});
 
 
