@@ -1,12 +1,75 @@
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
-  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
-  <!--[if lte IE 8]><script src="{{ "/js/ie/html5shiv.js" | prepend: site.baseurl }}"></script><![endif]-->
-  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-  <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}" />
-  <!--[if lte IE 8]><link rel="stylesheet" href="{{ "/css/ie8.css" | prepend: site.baseurl }}" /><![endif]-->
-  <!--[if lte IE 9]><link rel="stylesheet" href="{{ "/css/ie9.css" | prepend: site.baseurl }}" /><![endif]-->
-  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
+    <!-- Facebook Pixel Code -->
+    <script>
+        !(function(f, b, e, v, n, t, s) {
+            if (f.fbq) return;
+            n = f.fbq = function() {
+                n.callMethod
+                    ? n.callMethod.apply(n, arguments)
+                    : n.queue.push(arguments);
+            };
+            if (!f._fbq) f._fbq = n;
+            n.push = n;
+            n.loaded = !0;
+            n.version = "2.0";
+            n.queue = [];
+            t = b.createElement(e);
+            t.async = !0;
+            t.src = v;
+            s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s);
+        })(
+            window,
+            document,
+            "script",
+            "https://connect.facebook.net/en_US/fbevents.js"
+        );
+        fbq("init", "633811270373997");
+        fbq("track", "PageView");
+    </script>
+    <noscript
+        ><img
+            height="1"
+            width="1"
+            style="display:none"
+            src="https://www.facebook.com/tr?id=633811270373997&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Facebook Pixel Code -->
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>
+        {% if page.title %}{{ page.title | escape }}{% else %}{{
+            site.title | escape
+        }}{% endif %}
+    </title>
+    <meta
+        name="description"
+        content="{% if page.excerpt %}{{
+            page.excerpt | strip_html | strip_newlines | truncate: 160
+        }}{% else %}{{ site.description }}{% endif %}"
+    />
+    <!--[if lte IE 8]><script src="{{ "/js/ie/html5shiv.js" | prepend: site.baseurl }}"></script><![endif]-->
+    <link
+        rel="canonical"
+        href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}"
+    />
+    <link rel="stylesheet" href="{{
+        "/css/main.css" | prepend: site.baseurl
+    }}" />
+    <!--[if lte IE 8
+        ]><link rel="stylesheet" href="{{
+            "/css/ie8.css" | prepend: site.baseurl
+        }}" /><!
+    [endif]-->
+    <!--[if lte IE 9
+        ]><link rel="stylesheet" href="{{
+            "/css/ie9.css" | prepend: site.baseurl
+        }}" /><!
+    [endif]-->
+    <link rel="alternate" type="application/rss+xml" title="{{
+        site.title
+    }}" href="{{
+        "/feed.xml" | prepend: site.baseurl | prepend: site.url
+    }}">
 </head>
