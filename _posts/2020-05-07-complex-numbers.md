@@ -36,7 +36,7 @@ It will usually be written as `z = a +bi` where z is our complex number as a who
 
 When dealing with complex numbers we use what is called an Argand diagram. This is basically an x-y axis where the x-axis represents our real component and the y-axis represents the imaginary component of our complex number `a +bi` .
 
-![Argand Diagram](../images/complex-numbers/argand.png){:class="img-responsive"}
+![Argand Diagram](/images/complex-numbers/argand.png){:class="img-responsive"}
 
 This is not the only way of representing complex numbers and during the leaving cert you will be asked at times to convert between these methods of representing complex numbers. We talk about these below.
 
@@ -57,7 +57,7 @@ The complex number represented in polar form is in the form of:
 `z = r(cosθ + isinθ)`
 Where z is the complex number, r is the modulus and theta is our angle (or argument) which we will discuss next.
 
-![Argument](../images/complex-numbers/argument.png){:class="img-responsive"}
+![Argument](/images/complex-numbers/argument.png){:class="img-responsive"}
 
 ### Argument
 
@@ -67,11 +67,11 @@ When calculating this argument it is often very helpful to draw our complex numb
 
 To do this we are primarily going to be using tan because we will know both the x and y coordinates for any point on the Argand diagram in Cartesian form. The imaginary coordinate will be our vertical line and the real component will be the horizontal. This is shown more clearly in the diagram below.
 
-![Tan theta](../images/complex-numbers/sohcahtoa.png){:class="img-responsive"}
+![Tan theta](/images/complex-numbers/sohcahtoa.png){:class="img-responsive"}
 
 It is always useful to draw out these diagrams when you are calculating the argument `θ`, as sometimes we will have to calculate a different angle which we call `α` (alpha). This is because the angle we want to calculate is from the positive sense of the x-axis anticlockwise so in some cases we need to calculate a different angle and add or take it away from 180 or 360. Example of this is shown below.
 
-![Tan alpha](../images/complex-numbers/alpha.png){:class="img-responsive"}
+![Tan alpha](/images/complex-numbers/alpha.png){:class="img-responsive"}
 
 When converting from polar form back to Cartesian form we use the below formulae.
 
@@ -88,7 +88,7 @@ The reason why we do this is because multiplying by the conjugate over itself is
 
 An example of this can be seen below.
 
-![Argument](../images/complex-numbers/conjugate.png){:class="img-responsive"}
+![Argument](/images/complex-numbers/conjugate.png){:class="img-responsive"}
 
 ## Conclusion
 
