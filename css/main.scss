@@ -1918,6 +1918,7 @@ body.is-mobile {
 
 .article {
     background-color: #fff;
+    color: darkgray;
 
     .article-title {
         text-align: center;
@@ -1951,7 +1952,6 @@ body.is-mobile {
         width: 800px;
         margin: 0 auto;
         line-height: 1.4;
-        color: darkgray;
 
         img {
             max-width: 100%;
@@ -1960,6 +1960,8 @@ body.is-mobile {
 
     .article-info {
         width: 800px;
+        display: inline-flex;
+        justify-content: space-between;
         margin: 0 auto;
         height: 20px;
         padding: 10px 0 10px 0;
