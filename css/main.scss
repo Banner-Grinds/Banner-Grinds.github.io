@@ -1838,3 +1838,30 @@ $baseurl: '{{ site.baseurl }}/images';
 			}
 		}
 	}
+
+	
+	/* Article */
+	
+	.article {
+		background-color: #fff;
+
+		h1, h2, h3, h4 {
+			color: darkgray;
+		}
+
+		.article-content {
+			padding-top: 15px;
+			padding-bottom: 15px;
+			width: 800px;
+			margin: 0 auto;
+			line-height: 1.4;
+			color: darkgray;
+		}
+
+		.article-info {
+			width: 800px;
+			margin: 0 auto;
+			height: 20px;
+			padding: 10px 0 10px 0;
+		}
+	}
