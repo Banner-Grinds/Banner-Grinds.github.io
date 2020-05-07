@@ -1919,6 +1919,11 @@ body.is-mobile {
 .article {
     background-color: #fff;
 
+    .article-title {
+        text-align: center;
+        width: 800px;
+    }
+
     h1 {
         font-size: 30px;
         text-align: center;
