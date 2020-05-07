@@ -2,7 +2,34 @@
 layout: default
 ---
 
-<h1>{{ page.title }}</h1>
-<p>{{ page.date | date_to_string }} - {{ page.author }}</p>
+<div class="article">
+    <h1>{{ page.title }}</h1>
+    <div class="article-info">
+        <p>{{ page.date | date_to_string }} - {{ page.author }}</p>
+    </div>
 
-{{ content }}
+    <div class="article-content">
+        {{ content }}
+    </div>
+</div>
+
+<style>
+    .article {
+        background-color: #fff;
+    }
+
+    .article-content {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        width: 800px;
+        margin: 0 auto;
+        line-height: 1.4;
+    }
+
+    .article-info {
+        width: 800px;
+        margin: 0 auto;
+        height: 20px;
+        padding: 10px 0 10px 0;
+    }
+</style>
