@@ -1974,3 +1974,37 @@ body.is-mobile {
         margin-bottom: 20px;
     }
 }
+
+@media only screen and (max-width: 760px) {
+    .article {
+        max-width: 100%;
+
+        .article-title {
+            max-width: 100%;
+        }
+
+        h1 {
+            max-width: 100%;
+        }
+
+        h2 {
+            font-size: 18px;
+        }
+
+        h3 {
+            font-size: 16px;
+        }
+
+        .article-content {
+            max-width: 100%;
+
+            img {
+                max-width: 100%;
+            }
+        }
+
+        .article-info {
+            max-width: 100%;
+        }
+    }
+}
