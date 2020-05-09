@@ -1,7 +1,7 @@
 ---
 layout: post
 author: Cian Conway
-title: Complex Numbers on the Leaving Cert Exam
+title: Complex Numbers in the Leaving Cert
 ---
 
 ## Background Knowledge

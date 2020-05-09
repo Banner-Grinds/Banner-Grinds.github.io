@@ -17,9 +17,9 @@
 
     <!-- Facebook Pixel Code -->
     <script>
-        !(function(f, b, e, v, n, t, s) {
+        !(function (f, b, e, v, n, t, s) {
             if (f.fbq) return;
-            n = f.fbq = function() {
+            n = f.fbq = function () {
                 n.callMethod
                     ? n.callMethod.apply(n, arguments)
                     : n.queue.push(arguments);
@@ -47,7 +47,7 @@
         ><img
             height="1"
             width="1"
-            style="display:none"
+            style="display: none;"
             src="https://www.facebook.com/tr?id=633811270373997&ev=PageView&noscript=1"
     /></noscript>
     <!-- End Facebook Pixel Code -->
@@ -55,9 +55,8 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>
-        {% if page.title %}{{ page.title | escape }}{% else %}{{
-            site.title | escape
-        }}{% endif %}
+        {% if page.title %}{{ page.title | escape }}{% else %}{{ site.title |
+        escape }}{% endif %}
     </title>
     <meta
         name="description"
@@ -66,26 +65,34 @@
         }}{% else %}{{ site.description }}{% endif %}"
     />
     <!--[if lte IE 8]><script src="{{ "/js/ie/html5shiv.js" | prepend: site.baseurl }}"></script><![endif]-->
+    <meta property="og:url" content="https://www.bannergrinds.com/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="{{ page.title }}" />
+    <meta
+        property="og:description"
+        content="{% if page.excerpt %}{{
+        page.excerpt | strip_html | strip_newlines | truncate: 160
+    }}{% else %}{{ site.description }}{% endif %}"
+    />
+    <meta
+        property="og:image"
+        content="https://www.bannergrinds.com/images/banner.jpg"
+    />
+
     <link
         rel="canonical"
         href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}"
     />
-    <link rel="stylesheet" href="{{
-        "/css/main.css" | prepend: site.baseurl
-    }}" />
+    <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}"
+    />
     <!--[if lte IE 8
-        ]><link rel="stylesheet" href="{{
-            "/css/ie8.css" | prepend: site.baseurl
+        ]><link rel="stylesheet" href="{{ "/css/ie8.css" | prepend: site.baseurl
         }}" /><!
     [endif]-->
     <!--[if lte IE 9
-        ]><link rel="stylesheet" href="{{
-            "/css/ie9.css" | prepend: site.baseurl
+        ]><link rel="stylesheet" href="{{ "/css/ie9.css" | prepend: site.baseurl
         }}" /><!
     [endif]-->
-    <link rel="alternate" type="application/rss+xml" title="{{
-        site.title
-    }}" href="{{
-        "/feed.xml" | prepend: site.baseurl | prepend: site.url
-    }}">
+    <link rel="alternate" type="application/rss+xml" title="{{ site.title }}"
+    href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
 </head>
