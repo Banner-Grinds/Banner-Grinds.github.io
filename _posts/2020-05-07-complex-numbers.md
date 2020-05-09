@@ -2,6 +2,7 @@
 layout: post
 author: Cian Conway
 title: Complex Numbers in the Leaving Cert
+permalink: /blog/:title/
 ---
 
 ## Background Knowledge
