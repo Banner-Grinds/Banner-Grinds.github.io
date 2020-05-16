@@ -5,6 +5,7 @@ title: Complex Numbers in the Leaving Cert
 permalink: /blog/:title/
 wordcount: 1258
 readtime: 6m 16s
+excerpt_separator: <!--more-->
 ---
 
 ## Background Knowledge
@@ -12,6 +13,8 @@ readtime: 6m 16s
 Before jumping into this article it should be assumed that you have a decent grasp on trigonometry in particular sin cos and tan, and Pythagoras theorem will benefit you greatly in studying complex numbers. Basic understanding of coordinate geometry and plotting points on a graph is also useful.
 
 This topic can often leave students a bit confused about why we are doing certain things so a visual representation of every step in this process is critical to understanding what is going on.
+
+<!--more-->
 
 ## What is a complex number?
 
