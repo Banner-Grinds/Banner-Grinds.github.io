@@ -3,6 +3,8 @@ layout: post
 author: Cian Conway
 title: Complex Numbers in the Leaving Cert
 permalink: /blog/:title/
+wordcount: 1258
+readtime: 6m 16s
 ---
 
 ## Background Knowledge
