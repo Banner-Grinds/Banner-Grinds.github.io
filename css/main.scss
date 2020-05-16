@@ -2026,4 +2026,8 @@ body.is-mobile {
 
 .blog {
     @include wrapper(accent5);
+
+    .blog-excerpt {
+        font-size: 10px;
+    }
 }
