@@ -2029,5 +2029,9 @@ body.is-mobile {
 
     .blog-excerpt {
         font-size: 10px;
+
+        h2 {
+            display: none;
+        }
     }
 }
